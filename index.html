@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for the Drop Shift mobile game by N96S.">
+  <title>Privacy Policy | Drop Shift</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: rgba(20, 28, 52, 0.92);
+      --panel-soft: rgba(255, 255, 255, 0.055);
+      --text: #edf2ff;
+      --muted: #aeb9d7;
+      --accent: #6ee7ff;
+      --accent-2: #8b5cf6;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(110, 231, 255, 0.15), transparent 32%),
+        radial-gradient(circle at 85% 25%, rgba(139, 92, 246, 0.18), transparent 34%),
+        linear-gradient(145deg, #080c18 0%, var(--bg) 52%, #11182c 100%);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .hero,
+    .card {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(30px, 7vw, 64px);
+      border-radius: 28px 28px 16px 16px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -85px;
+      top: -95px;
+      border-radius: 54px;
+      transform: rotate(24deg);
+      background: linear-gradient(135deg, rgba(110, 231, 255, 0.28), rgba(139, 92, 246, 0.18));
+      filter: blur(2px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 16px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: #dffaff;
+      background: rgba(110, 231, 255, 0.09);
+      border: 1px solid rgba(110, 231, 255, 0.22);
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 18px var(--accent);
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      max-width: 690px;
+      font-size: clamp(2.15rem, 8vw, 4.7rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 670px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.7vw, 1.15rem);
+    }
+
+    .meta {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      color: #dbe5ff;
+      font-size: 0.9rem;
+    }
+
+    .card {
+      margin-top: 14px;
+      padding: clamp(24px, 6vw, 48px);
+      border-radius: 16px 16px 28px 28px;
+    }
+
+    section + section {
+      margin-top: 38px;
+      padding-top: 34px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.28rem, 4vw, 1.65rem);
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #d7def0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+      color: #d7def0;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 17px 18px;
+      border-radius: 14px;
+      background: rgba(110, 231, 255, 0.075);
+      border: 1px solid rgba(110, 231, 255, 0.18);
+      color: #e6fbff;
+    }
+
+    .contact {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      padding: 24px 8px 4px;
+      text-align: center;
+      color: #8793b2;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 560px) {
+      .wrap {
+        padding: 14px 0 26px;
+      }
+
+      .hero {
+        border-radius: 22px 22px 12px 12px;
+      }
+
+      .card {
+        border-radius: 12px 12px 22px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow"><span class="dot"></span> N96S</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        This Privacy Policy explains how information is handled when you use
+        <strong>Drop Shift</strong>.
+      </p>
+      <div class="meta">
+        <span class="pill">Game: Drop Shift</span>
+        <span class="pill">Developer: N96S</span>
+        <span class="pill">Last updated: August 6, 2026</span>
+      </div>
+    </header>
+
+    <article class="card">
+      <section>
+        <h2>1. Overview</h2>
+        <p>
+          N96S built Drop Shift as a mobile game. We respect your privacy and aim
+          to clearly explain what information may be processed when you play the game.
+        </p>
+        <p>
+          N96S does not directly require you to create an account and does not directly
+          collect your name, postal address, phone number, or email address through the game.
+          However, third-party services integrated into the game may automatically collect
+          certain information as described below.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information That May Be Collected</h2>
+        <p>
+          When advertising or platform services are active, the following categories of
+          information may be processed by third-party providers:
+        </p>
+        <ul>
+          <li>Device or other identifiers, including advertising identifiers where permitted.</li>
+          <li>IP address and approximate location derived from the IP address.</li>
+          <li>Device information, operating system, language, app version, and connection information.</li>
+          <li>Advertising interactions, such as ad impressions, views, clicks, and completed rewarded ads.</li>
+          <li>App diagnostics and technical information used to maintain service reliability and prevent fraud.</li>
+          <li>Gameplay-related platform information, such as achievements, leaderboard scores, or player identifiers, if Google Play Games features are enabled.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. How Information Is Used</h2>
+        <p>Information may be used for the following purposes:</p>
+        <ul>
+          <li>Displaying contextual or personalized advertisements where legally permitted.</li>
+          <li>Measuring advertising performance and limiting repeated advertisements.</li>
+          <li>Providing rewarded advertisements and verifying that an advertisement was completed.</li>
+          <li>Detecting fraud, abuse, security incidents, and technical problems.</li>
+          <li>Providing optional Google Play Games features such as achievements or leaderboards.</li>
+          <li>Complying with legal obligations and user privacy choices.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Unity Ads</h2>
+        <p>
+          Drop Shift uses or may use <strong>Unity Ads</strong> to display advertisements.
+          Unity and its advertising partners may collect and process device identifiers,
+          advertising interaction data, app diagnostics, and related technical information
+          for advertising, analytics, security, fraud prevention, and legal compliance.
+        </p>
+        <p>
+          Depending on your region, device settings, age-related settings, and consent choices,
+          ads may be personalized or non-personalized. Unity may present its own privacy consent
+          interface where required.
+        </p>
+        <p>
+          Learn more in Unity's
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+             target="_blank" rel="noopener noreferrer">Game Player and App User Privacy Policy</a>
+          and review Unity's
+          <a href="https://unity.com/legal/do-not-sell-my-personal-information"
+             target="_blank" rel="noopener noreferrer">privacy choices</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Google Play Games Services</h2>
+        <p>
+          If enabled in Drop Shift, Google Play Games Services may process a player identifier,
+          display name, profile information, achievements, leaderboard scores, and game progress
+          to provide platform features requested by the player.
+        </p>
+        <p>
+          Google's handling of information is governed by the
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Sharing of Information</h2>
+        <p>
+          N96S does not sell personal information directly. Information may be processed or
+          shared by Unity, Google, advertising partners, service providers, and authorities
+          where required by law. These providers process information under their own privacy
+          policies and legal obligations.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Data Retention and Security</h2>
+        <p>
+          N96S does not maintain a separate database of player personal information for Drop Shift.
+          Third-party providers retain information according to their own policies and legal
+          requirements. We use reasonable measures to protect information under our control,
+          but no electronic transmission or storage method can be guaranteed to be completely secure.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Your Privacy Choices and Data Deletion</h2>
+        <p>
+          You may be able to control advertising personalization through your device settings,
+          Google account settings, consent screens shown in the game, or Unity's privacy tools.
+        </p>
+        <p>
+          Drop Shift does not create a separate N96S user account. To ask whether N96S holds any
+          information about you, or to request deletion of information under our control, contact us
+          using the email address below. Requests concerning data controlled by Unity or Google may
+          also need to be submitted directly to those providers.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Children's Privacy</h2>
+        <p>
+          We do not knowingly request children to provide personal information directly to N96S.
+          We aim to use age-appropriate privacy and advertising settings where required by applicable
+          law and platform rules. If you believe that a child has provided personal information to us,
+          please contact us so that we can take appropriate action.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy when the game, integrated services, or legal requirements
+          change. The updated version will be published on this page and the “Last updated” date will
+          be revised.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Contact</h2>
+        <p>For privacy questions or requests, contact:</p>
+        <div class="contact">
+          <strong>N96S</strong>
+          <span>Drop Shift developer</span>
+          <a href="mailto:nodze96studio@gmail.com">nodze96studio@gmail.com</a>
+        </div>
+        <div class="note">
+          Please do not include passwords, payment information, or other highly sensitive information
+          in your email.
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      © 2026 N96S · Drop Shift
+    </footer>
+  </main>
+</body>
+</html>
