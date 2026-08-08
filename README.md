@@ -4,6 +4,8 @@
 
 ## 1. Overview
 
+
+
 N96S built Drop Shift as a mobile game.
 
 We respect your privacy and aim to clearly explain what information may be processed when you use the game.
